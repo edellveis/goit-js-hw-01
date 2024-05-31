@@ -1,5 +1,10 @@
-function makeTransaction (quantly, prisePerDroid){
-const toralPrice = quantly * prisePerDroid;
-const message = `You ordered ${quantly} droids worth ${toralPrice}`
-return message;
+function makeTransaction(quantity, pricePerDroid) {
+    const totalPrice = quantity * pricePerDroid;
+    const message = `You ordered ${quantity} droids worth ${totalPrice}`;
+
+    // Консольні логи 
+    console.log("Total Price:", totalPrice);
+    console.log("Message:", message);
+
+    return message;
 }
